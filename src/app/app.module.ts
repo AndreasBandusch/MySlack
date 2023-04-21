@@ -16,6 +16,8 @@ import { HeaderComponent } from './components/main-content/header/header.compone
 import { MenuComponent } from './components/main-content/menu/menu.component';
 import { MainChatComponent } from './components/main-content/main-chat/main-chat.component';
 import { ThreadComponent } from './components/main-content/thread/thread.component';
+import { OverlayComponent } from './components/main-content/overlay/overlay.component';
+import { UserMenuComponent } from './components/main-content/overlay/user-menu/user-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ThreadComponent } from './components/main-content/thread/thread.compone
     HeaderComponent,
     MenuComponent,
     MainChatComponent,
-    ThreadComponent
+    ThreadComponent,
+    OverlayComponent,
+    UserMenuComponent
   ],
   imports: [
     BrowserModule,
