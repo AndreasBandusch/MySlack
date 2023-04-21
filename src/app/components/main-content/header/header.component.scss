@@ -1,5 +1,6 @@
 h1 {
-    font-size: 32px;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .content {
@@ -15,10 +16,73 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 32px;
 }
 
 .logo {
     height: 70px;
     width: 70px;
     margin-right: 16px;
+}
+
+.menu-image {
+    height: 32px;
+    width: 32px;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 990px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 42px;
+    padding: 18px 45px;
+    
+    input {
+        height: 100%;
+        width: 100%;
+        font-size: 24px;
+    }
+
+    img {
+        height: 35px;
+        width: 35px;
+        margin-left: 16px;
+    }
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 32px;
+    margin-left: 32px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    img {
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+        margin-left: 16px;
+    }
+}
+
+.user-menu {
+    width: 30px;
+    height: 30px;
+    margin-left: 16px;
+    cursor: pointer;
 }

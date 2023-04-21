@@ -2,13 +2,29 @@
     <div class="title">
         <img src="assets/images/logo.png" alt="Logo" class="logo">
         <h1>MySlack</h1>
+        <ng-content *ngIf="menuIsOpen; then hideMenu else showMenu"></ng-content>
+        <ng-template #hideMenu>
+            <img src="assets/images/icons/hide-menu.png" class="menu-image" (click)="toggleMenu()"
+                (mouseover)="hideMenuImg.src='assets/images/icons/hide-menu-hover.png'"
+                (mouseout)="hideMenuImg.src='assets/images/icons/hide-menu.png'" #hideMenuImg alt="Menü schließen">
+        </ng-template>
+        <ng-template #showMenu>
+            <img src="assets/images/icons/show-menu.png" class="menu-image" (click)="toggleMenu()"
+                (mouseover)="showMenuImg.src='assets/images/icons/show-menu-hover.png'"
+                (mouseout)="showMenuImg.src='assets/images/icons/show-menu.png'" #showMenuImg alt="Menü öffnen">
+        </ng-template>
+    </div>
+    <div class="search">
+        <input type="text" placeholder="Code learning durchsuchen">
+        <img src="assets/images/icons/search.png">
     </div>
     <div class="user">
-        <div class="name">
-
-        </div>
+        <span class="name">
+            Frederik Beck
+        </span>
         <div class="avatar">
-
+            <img src="assets/images/avatars/frederik-beck.png">
         </div>
+        <img src="assets/images/icons/profile-arrow-down.png" class="user-menu">
     </div>
 </div>
