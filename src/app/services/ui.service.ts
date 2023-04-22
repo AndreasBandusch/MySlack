@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
 })
 
 export class UiService {
-  showOverlay: boolean = false;
+  showOverlay: boolean = true;
   overlays: any = {
     userMenu: false,
-    testMenu: false,
+    addChannel: true,
   };
 
   constructor() { }
@@ -18,5 +18,9 @@ export class UiService {
       this.overlays[overlay] = true;
       this.showOverlay = true;
     }
+  }
+
+  dontCloseByClick(event: Event): void {
+    event.stopPropagation();
   }
 }

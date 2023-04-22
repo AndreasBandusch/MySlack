@@ -1,6 +1,12 @@
 :root {
     --main-bg: #ECEEFE; 
-    --overlay-bg: rgba(236, 238, 254, .25);
+    --box-bg: #fff;
+    --overlay-bg: rgba(236, 238, 254, .5);
+    --highlight: #ECEEFE;
+    --font-color-prim: #000;
+    --font-color-sec: #535AF1;
+    --paceholder-color: #686868;
+    --outline-default-color: #ADB0D9;
 }
 
 * {
@@ -15,7 +21,9 @@ html {
 
 body {
     font-family: 'Nunito Sans', sans-serif;
+    color: var(--font-color-prim);
     background-color: var(--main-bg);
+    font-weight: 400;
 }
 
 input {

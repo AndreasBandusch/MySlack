@@ -18,6 +18,7 @@ import { MainChatComponent } from './components/main-content/main-chat/main-chat
 import { ThreadComponent } from './components/main-content/thread/thread.component';
 import { OverlayComponent } from './components/main-content/overlay/overlay.component';
 import { UserMenuComponent } from './components/main-content/overlay/user-menu/user-menu.component';
+import { AddChannelComponent } from './components/main-content/overlay/add-channel/add-channel.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { UserMenuComponent } from './components/main-content/overlay/user-menu/u
     MainChatComponent,
     ThreadComponent,
     OverlayComponent,
-    UserMenuComponent
+    UserMenuComponent,
+    AddChannelComponent
   ],
   imports: [
     BrowserModule,

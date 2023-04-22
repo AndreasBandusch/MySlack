@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-user-menu',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-menu.component.scss']
 })
 export class UserMenuComponent {
-
+ constructor(public ui: UiService) {}
 }
