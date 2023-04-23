@@ -19,6 +19,8 @@ import { ThreadComponent } from './components/main-content/thread/thread.compone
 import { OverlayComponent } from './components/main-content/overlay/overlay.component';
 import { UserMenuComponent } from './components/main-content/overlay/user-menu/user-menu.component';
 import { AddChannelComponent } from './components/main-content/overlay/add-channel/add-channel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { AddChannelComponent } from './components/main-content/overlay/add-chann
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
