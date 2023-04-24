@@ -1,0 +1,8 @@
+<div class="overlay" (click)="ui.toggleOverlay(false ,'userMenu')">
+   <div class="content" (click)="ui.dontCloseByClick($event)">
+      <ul>
+         <li (click)="ui.toggleOverlay(true, 'profile')">Profil</li>
+         <li routerLink="/login">Log out</li>
+      </ul>
+   </div>
+</div>

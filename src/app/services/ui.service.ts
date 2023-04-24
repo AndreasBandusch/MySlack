@@ -6,9 +6,9 @@ import { Injectable } from '@angular/core';
 
 export class UiService {
   showOverlay: boolean = false;
-  currentOpenOverlay: string = '';
   overlays: any = {
     userMenu: false,
+    profile: false,
     addChannel: false,
   };
 
@@ -19,14 +19,11 @@ export class UiService {
     if (status) {
       this.overlays[overlay] = true;
       this.showOverlay = true;
-      this.currentOpenOverlay = overlay;
     } else {
       this.overlays[overlay] = false;
       this.showOverlay = false;
-    }
-    if (!overlay) {
-      this.overlays[this.currentOpenOverlay] = false;
-    }
+    } 
+    
   }
 
   

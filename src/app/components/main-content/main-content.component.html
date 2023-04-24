@@ -1,4 +1,6 @@
 <div class="content">
     <app-header></app-header>
-    <app-overlay *ngIf="ui.showOverlay"></app-overlay>
+    <app-user-menu *ngIf="ui.overlays.userMenu"></app-user-menu>
+    <app-add-channel *ngIf="ui.overlays.addChannel"></app-add-channel>
+    <app-profile *ngIf="ui.overlays.profile"></app-profile>
 </div>

@@ -16,11 +16,11 @@ import { HeaderComponent } from './components/main-content/header/header.compone
 import { MenuComponent } from './components/main-content/menu/menu.component';
 import { MainChatComponent } from './components/main-content/main-chat/main-chat.component';
 import { ThreadComponent } from './components/main-content/thread/thread.component';
-import { OverlayComponent } from './components/main-content/overlay/overlay.component';
-import { UserMenuComponent } from './components/main-content/overlay/user-menu/user-menu.component';
-import { AddChannelComponent } from './components/main-content/overlay/add-channel/add-channel.component';
+import { UserMenuComponent } from './components/main-content/overlays/user-menu/user-menu.component';
+import { AddChannelComponent } from './components/main-content/overlays/add-channel/add-channel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
+import { ProfileComponent } from './components/main-content/overlays/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +34,9 @@ import {MatIconModule} from '@angular/material/icon';
     MenuComponent,
     MainChatComponent,
     ThreadComponent,
-    OverlayComponent,
     UserMenuComponent,
-    AddChannelComponent
+    AddChannelComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

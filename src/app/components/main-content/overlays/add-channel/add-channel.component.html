@@ -1,0 +1,31 @@
+<div class="overlay" (click)="ui.toggleOverlay(false ,'addChannel')">
+    <div class="content" (click)="ui.dontCloseByClick($event)">
+        <div class="content-head">
+            <div class="title-cont">
+                <span class="title">Channel erstellen</span>
+                <mat-icon class="icon-hover" (click)="ui.toggleOverlay(false, 'addChannel')">close</mat-icon>
+            </div>
+
+            <p class="info">Channels dienen deinem Team zur Kommunikation. Am besten sollten sie themenbezogen sein
+                #marketing zum Beispiel.</p>
+        </div>
+        <div class="content-body">
+            <div class="input">
+                <span class="input-title">Channel-Name</span>
+                <div class="input-field">
+                    <img src="assets/images/icons/tag.png">
+                    <input type="text" placeholder="z.B. Kooperationsprojekte">
+                </div>
+            </div>
+            <div class="input">
+                <span class="input-title">Beschreibung <span class="note">(optional)</span></span>
+                <div class="input-field text-area">
+                    <textarea></textarea>
+                </div>
+            </div>
+            <div class="btn-cont">
+                <button class="btn-primary">Erstellen</button>
+            </div>
+        </div>
+    </div>
+</div>
