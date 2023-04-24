@@ -1,6 +1,6 @@
 <div class="content">
     <div class="title">
-        <img src="assets/images/logo.png" alt="Logo" class="logo">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" (click)="ui.toggleOverlay(true, 'addChannel')">
         <h1>MySlack</h1>
         <ng-content *ngIf="menuIsOpen; then hideMenu else showMenu"></ng-content>
         <ng-template #hideMenu>
