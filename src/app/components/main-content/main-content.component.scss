@@ -3,3 +3,17 @@
     height: 100vh;
     width: 100vw;
 }
+
+.content-body {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    width: 100%;
+    height: calc(100% - 131px);
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+app-main-chat {
+    flex: 1;
+}

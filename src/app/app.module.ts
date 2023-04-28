@@ -21,6 +21,8 @@ import { AddChannelComponent } from './components/main-content/overlays/add-chan
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { ProfileComponent } from './components/main-content/overlays/profile/profile.component';
+import { ChannelsComponent } from './components/main-content/menu/channels/channels.component';
+import { DirectMessagesComponent } from './components/main-content/menu/direct-messages/direct-messages.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ProfileComponent } from './components/main-content/overlays/profile/pro
     ThreadComponent,
     UserMenuComponent,
     AddChannelComponent,
-    ProfileComponent
+    ProfileComponent,
+    ChannelsComponent,
+    DirectMessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -5,6 +5,8 @@ import { Injectable } from '@angular/core';
 })
 
 export class UiService {
+  showMenu = true;
+  showThread: boolean = true;
   overlays: any = {
     userMenu: false,
     profile: false,
@@ -15,7 +17,7 @@ export class UiService {
 
 
   toggleOverlay(status: boolean, overlay: any): void {
-    status ? this.overlays[overlay] = true:  this.overlays[overlay] = false;
+    status ? this.overlays[overlay] = true : this.overlays[overlay] = false;
   }
 
   
