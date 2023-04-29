@@ -15,6 +15,9 @@ export class UiService {
 
   constructor() { }
 
+  setActiveMenuItem() {
+    
+  }
 
   toggleOverlay(status: boolean, overlay: any): void {
     status ? this.overlays[overlay] = true : this.overlays[overlay] = false;
@@ -24,4 +27,5 @@ export class UiService {
   dontCloseByClick(event: Event): void {
     event.stopPropagation();
   }
+
 }

@@ -1,12 +1,16 @@
 <div class="content">
     <div class="header">
-        <div class="left">
-            <mat-icon class="menu">arrow_drop_down</mat-icon>
+        <div class="left" (click)="toogleChannels()">
+            <mat-icon *ngIf="menuIsOpen" class="menu">arrow_drop_down</mat-icon>
+            <mat-icon *ngIf="!menuIsOpen" class="menu">arrow_right</mat-icon>
             <mat-icon class="material-icons-outlined">workspaces</mat-icon>
             <span class="title">Channels</span>
         </div>
         <div class="right">
-            <mat-icon>add</mat-icon>
+            <mat-icon (click)="ui.toggleOverlay(true, 'addChannel')" class="add-channel icon-hover">add</mat-icon>
         </div>
     </div>
+    <ul *ngIf="menuIsOpen" class="channels">
+        <li *ngFor="let item of items$ | async "><mat-icon>tag</mat-icon> <span>{{item.name}}</span></li>
+    </ul>
 </div>

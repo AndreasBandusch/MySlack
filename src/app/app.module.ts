@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideAuth,getAuth } from '@angular/fire/auth';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { SendEmailComponent } from './components/send-email/send-email.component';
@@ -19,7 +19,7 @@ import { ThreadComponent } from './components/main-content/thread/thread.compone
 import { UserMenuComponent } from './components/main-content/overlays/user-menu/user-menu.component';
 import { AddChannelComponent } from './components/main-content/overlays/add-channel/add-channel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from './components/main-content/overlays/profile/profile.component';
 import { ChannelsComponent } from './components/main-content/menu/channels/channels.component';
 import { DirectMessagesComponent } from './components/main-content/menu/direct-messages/direct-messages.component';

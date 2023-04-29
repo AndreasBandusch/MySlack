@@ -27,6 +27,12 @@
 
 .left {
     align-items: center;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        color: var(--font-color-sec);
+        transition: all 225ms ease-in-out;
+    }
 }
 
 .right {
@@ -36,6 +42,30 @@
 .material-icons-outlined {
     margin-right: 12px;
 }
+
+.channels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    gap: 16px;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        &:first-child {
+            margin-top: 32px;
+        }
+    } 
+}
+
+.add-channel {
+        display: flex;
+        width: 30px;
+        height: 30px; 
+}
+
 
 
 
