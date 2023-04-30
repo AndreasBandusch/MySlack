@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class UiService {
   showMenu = true;
   showThread: boolean = true;
+  activeLink: string = '';
   overlays: any = {
     userMenu: false,
     profile: false,
