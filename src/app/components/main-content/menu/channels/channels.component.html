@@ -1,24 +1,27 @@
 <div class="content">
     <div class="header">
         <div class="left" (click)="toogleChannels()">
-            <mat-icon *ngIf="menuIsOpen" class="menu">arrow_drop_down</mat-icon>
-            <mat-icon *ngIf="!menuIsOpen" class="menu">arrow_right</mat-icon>
-            <mat-icon class="material-icons-outlined">workspaces</mat-icon>
+            <mat-icon *ngIf="menuIsOpen" class="drop-down">arrow_drop_down</mat-icon>
+            <mat-icon *ngIf="!menuIsOpen" class="drop-down">arrow_right</mat-icon>
+            <mat-icon>workspaces_outline</mat-icon>
             <span class="title">Channels</span>
         </div>
         <div class="right">
             <mat-icon (click)="ui.toggleOverlay(true, 'addChannel')" class="add-channel icon-hover">add</mat-icon>
         </div>
     </div>
-    <ul *ngIf="menuIsOpen" class="channels">
-
-        <li *ngFor="let item of items$ | async"
-            (click)="ui.activeLink = item.name">
-            <div class="item-cont" [class.active-link]="item.name === ui.activeLink">
+    <ul *ngIf="menuIsOpen" class="menu">
+        <li *ngFor="let item of items$ | async" (click)="ui.activeLink = item.name">
+            <div [class.active-link]="item.name === ui.activeLink" class="item-cont">
                 <mat-icon>tag</mat-icon>
                 <span>{{item.name}}</span>
             </div>
         </li>
-
+        <li>
+            <div class="add item-cont" (click)="ui.toggleOverlay(true, 'addChannel')">
+                <mat-icon>add_circle_outline</mat-icon>
+                <span>Channel hinzufügen</span>
+            </div>
+        </li>
     </ul>
 </div>

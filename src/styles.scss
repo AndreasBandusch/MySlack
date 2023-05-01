@@ -2,13 +2,13 @@
 
 :root {
     --main-font: 'Nunito Sans', sans-serif;
-    --main-bg: #ECEEFE; 
+    --main-bg: #ECEEFE;
     --box-bg: #fff;
     --overlay-bg: rgba(236, 238, 254, .25);
     --highlight: #ECEEFE;
     --font-color-prim: #000;
     --font-color-sec: #535AF1;
-    --note-color: #686868; 
+    --note-color: #686868;
     --outline-default-color: #ADB0D9;
     --primary: #444DF2;
     --primary-hover: #797EF3;
@@ -32,12 +32,15 @@ body {
 }
 
 
-input, ::placeholder, button {
+input,
+::placeholder,
+button {
     font-family: var(--main-font);
     font-weight: 400;
 }
 
-input, textarea {
+input,
+textarea {
     border: unset;
     background-color: unset;
     outline: none;
@@ -106,14 +109,68 @@ button {
     }
 }
 
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+    li {
+        display: flex;
+        align-items: center;
+        padding: 4px 20px;
+        font-size: 18px;
+
+        &:first-child {
+            margin-top: 16px;
+        }
+    }
+
+    .item-cont {
+        display: inline-block;
+        padding: 4px 20px;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            background-color: var(--main-bg);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 125ms ease-in-out;
+
+            mat-icon {
+                color: var(--font-color-sec);
+            }
+        }
+
+        span,
+        mat-icon {
+            vertical-align: middle;
+        }
+
+        mat-icon {
+            margin-right: 8px;
+            font-style: italic !important;
+        }
+
+       
+    }
+}
+
 .active-link {
     background-color: var(--main-bg);
     color: var(--font-color-sec);
     font-weight: 700;
     border-radius: 20px;
     pointer-events: none;
+    cursor: default;
+
+    mat-icon {
+        font-weight: 700;
+    }
 }
 
+html,
+body {
+    height: 100%;
+}
 
-html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

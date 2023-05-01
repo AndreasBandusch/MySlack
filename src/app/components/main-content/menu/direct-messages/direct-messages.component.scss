@@ -1,0 +1,64 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-down {
+    margin-right: 20px;
+}
+
+.title {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.left {
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    align-items: center;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        color: var(--font-color-sec);
+        transition: all 125ms ease-in-out;
+    }
+
+    mat-icon {
+        margin-right: 8px;
+    }
+}
+
+.item-cont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 30px !important;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    img {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        margin-right: 16px;
+    }
+}
+
+
+
+    
+
+

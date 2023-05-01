@@ -26,4 +26,5 @@ export class ChannelsComponent implements OnInit {
   toogleChannels() {
     this.menuIsOpen = !this.menuIsOpen;
   }
+  
 }
