@@ -12,8 +12,10 @@
             <div [class.active-link]="item.name === ui.activeLink" class="item-cont">
                 <div class="avatar">
                     <img src="assets/images/avatars/{{item.image}}.png">
+                    <div *ngIf="item.online" class="online"></div>
+                    <div *ngIf="!item.online" class="offline"></div>
                 </div>
-                <span>{{item.name}}</span>
+                <span class="name">{{item.name}}</span>
             </div>
         </li>
         <li>

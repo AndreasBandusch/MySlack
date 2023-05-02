@@ -42,23 +42,42 @@
     align-items: center;
     justify-content: flex-start;
     border-radius: 30px !important;
+
+    .name {
+        margin-left: 16px;
+    }
 }
 
 .avatar {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
     img {
         height: 50px;
         width: 50px;
         border-radius: 100%;
-        margin-right: 16px;
     }
+
+
 }
 
+.online,
+.offline {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    border: 2px solid #FFFFFF;
+    right: 0px;
+    bottom: 2px;
+}
 
+.online {
+    background-color: #92C83E;
+}
 
-    
-
-
+.offline {
+    background-color: #686868;
+}
