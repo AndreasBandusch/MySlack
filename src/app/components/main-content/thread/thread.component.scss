@@ -3,5 +3,146 @@
     height: 100%;
     background-color: var(--box-bg);
     border-radius: 30px;
+}
+
+mat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    height: 104px;
     padding: 32px;
+    background-color: #fff;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    mat-icon {
+        font-size: 24px;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.channel-name {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--primary-hover);
+
+    mat-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-style: italic;
+        color: var(--primary-hover);
+    }
+}
+
+.article-cont {
+    display: flex;
+    width: 100%;
+    min-height: 100px;
+    padding: 24px 32px 0px 32px;
+    font-size: 18px;
+
+}
+
+.message {
+    border-radius: 0px 20px 20px 20px;
+    padding: 15px;
+    background-color: var(--highlight);
+    font-size: 18px;
+}
+
+.article-left {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 16px;
+
+}
+
+
+.article-right {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  
+}
+
+.article-right-header {
+    margin-bottom: 8px;
+}
+
+.name {
+    margin-right: 16px;
+    font-weight: 700;
+}
+
+.time {
+    font-size: 14px;
+    color: var(--note-color);
+}
+
+.avatar {
+    position: relative;
+    display: flex
+    ;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 70px;
+        width: 70px;
+        border-radius: 100%;
+    }
+}
+
+.article-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    padding: 0 32px;
+}
+
+.article-footer-left {
+    margin-right: 16px;
+}
+
+.article-footer-right {
+    flex: 1;
+    align-items: center;
+}
+
+.answers-amount {
+    color: var( --outline-default-color);
+}
+
+.underline {
+    width: 100%;
+    border-top: 1px solid var(--outline-default-color);
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UiService } from 'src/app/services/ui.service';
 
 @Component({
   selector: 'app-thread',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./thread.component.scss']
 })
 export class ThreadComponent {
-
+  constructor(public ui: UiService) {}
 }
