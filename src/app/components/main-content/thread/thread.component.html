@@ -9,32 +9,11 @@
                 </div>
             </div>
             <div class="header-right">
-                <mat-icon class="icon-hover" (click)="ui.showThread = false" >close</mat-icon>
+                <mat-icon class="icon-hover" (click)="ui.showThread = false">close</mat-icon>
             </div>
         </div>
     </div>
-    <div class="article-cont">
-        <div class="article-left">
-            <div class="avatar">
-                <img src="assets/images/avatars/noah-braun.png">
-            </div>
-        </div>
-        <div class="article-right">
-            <div class="article-right-header">
-                <span class="name">Noah Braun</span>
-                <span class="time">14:25 Uhr</span>
-            </div>
-            <div class="message">
-                <span>Hello my first message for you! Hello my first message for you! Hello my first message for you!</span>
-            </div>
-        </div>
-    </div>
-    <div class="article-footer">
-        <div class="article-footer-left">
-            <span class="answers-amount">2 Antworten</span>
-        </div>
-        <div class="article-footer-right">
-            <hr class="underline">
-        </div>
-    </div>
+    <div class="post-content">
+        <app-post></app-post>
+    </div> 
 </div>

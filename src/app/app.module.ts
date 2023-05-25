@@ -23,6 +23,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { ProfileComponent } from './components/main-content/overlays/profile/profile.component';
 import { ChannelsComponent } from './components/main-content/menu/channels/channels.component';
 import { DirectMessagesComponent } from './components/main-content/menu/direct-messages/direct-messages.component';
+import { PostComponent } from './components/main-content/thread/post/post.component';
+import { AnswerComponent } from './components/main-content/thread/post/answer/answer.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { DirectMessagesComponent } from './components/main-content/menu/direct-m
     AddChannelComponent,
     ProfileComponent,
     ChannelsComponent,
-    DirectMessagesComponent
+    DirectMessagesComponent,
+    PostComponent,
+    AnswerComponent
   ],
   imports: [
     BrowserModule,
